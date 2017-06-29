@@ -1,0 +1,15 @@
+Nullness注解
+1.@NonNull  注解的参数或方法不能为null
+2.@Nullable 注解的参数或方法可以为null
+资源类型注解
+1.@StringRes 注解的参数或方法只能是字符串资源
+2.@AnyRes   注解的参数或方法只能是资源类型
+
+@Keep 使用这个注解将会告诉Proguard不要对指定的函数或者类进行优化操作
+
+@Retention
+1.RetentionPolicy.SOURCE  注解仅存在于源码中，在class字节码文件中不包含
+2.RetentionPolicy.CLASS  注解会在class字节码文件中存在，但运行时无法获得
+3.RetentionPolicy.RUNTIME 注解会在class字节码文件中存在，在运行时可以通过反射获取到
+
+@Target

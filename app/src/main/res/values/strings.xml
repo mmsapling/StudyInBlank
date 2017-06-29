@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StudyInBlank</string>
+    <string-array name="example_data">
+        <item>mvp学习</item>
+        <item>自定义控件</item>
+        <item>测试</item>
+        <item>相机相关</item>
+        <item>权限判断</item>
+        <item>二维码扫描</item>
+        <item>Html5</item>
+        <item>Html5 back</item>
+    </string-array>
+    <string-array name="android_data">
+        <item>fragment生命周期</item>
+
+    </string-array>
+</resources>

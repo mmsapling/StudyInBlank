@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/ccb_dialog_shape"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/y14">
+    <LinearLayout
+       android:id="@+id/dialog_top_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="@dimen/y43"
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y101"
+            android:gravity="center_horizontal|bottom"
+            android:text="标题"
+            android:textColor="#0066b3"
+            android:textSize="16sp"/>
+
+            android:id="@+id/dialog_content_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/x300"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@drawable/ccb_scrollview_bars_shape">
+
+            <LinearLayout
+                android:id="@+id/dialog_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/y36"
+                >
+
+                <TextView
+                    android:id="@+id/tv_dialog_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:text="内容"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/dialog_consult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6dp"
+                        android:paddingLeft="20dp"
+                        android:text="参考码："
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_dialog_consult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6dp"
+                        android:paddingRight="15dp"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:background="#dddddd"
+            android:layout_height="@dimen/y1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/dialog_top_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y115">
+        <TextView
+            android:id="@+id/tv_dialog_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/dialog_spacing"
+            android:layout_width="1dp"
+            android:background="#dddddd"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_dialog_right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textColor="#00bb63"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

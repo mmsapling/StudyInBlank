@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script>
+			function btnclick(){
+
+				var test='{"test1":"1","test2":"2"}';
+				jsObj.javaCallHtml(test);
+			}
+			function JavaCallHtml(s){
+			    document.write(s);
+			    var obj = JSON.parse(s);
+				alert("java调取js代码" + obj.test1);
+			}
+		</script>
+<head>
+	<meta charset="UTF-8">
+	<title>测试</title>
+</head>
+<body>
+哈哈哈
+<input type="password" name="pwd" id="pwd">
+<button onclick="btnclick()">点击</button>
+<button >点击1</button>
+</body>
+</html>

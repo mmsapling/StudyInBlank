@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#a2a1a6"/>
+        <RadioGroup
+            android:id="@+id/home_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/home_rb_index"
+                android:text="首页"
+                android:checked="true"
+                android:drawableTop="@drawable/home_index"
+                style="@style/main_radio_button"/>
+            <RadioButton
+                android:id="@+id/home_rb_myself"
+                android:text="我的"
+                android:drawableTop="@drawable/home_myself"
+                style="@style/main_radio_button"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/include_top"
+        android:layout_above="@id/container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/comm_layout_menu"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

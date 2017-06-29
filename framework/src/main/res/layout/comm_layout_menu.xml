@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_menu_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y127"
+                android:background="@color/colorPrimary">
+    <!--左边按钮 或文本-->
+    <LinearLayout
+        android:id="@+id/ll_left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_left_container"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_menu_left"
+                style="@style/comm_menu_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x65"
+                android:background="@mipmap/back"
+                android:minHeight="@dimen/y69"
+                android:minWidth="@dimen/x69"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_menu_title"
+        style="@style/comm_menu_style"
+        android:text="标题"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_right_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_menu_right"
+            android:minHeight="@dimen/x69"
+            android:minWidth="@dimen/x69"
+            style="@style/comm_menu_style"
+            android:background="@null"
+            android:layout_marginRight="@dimen/x65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

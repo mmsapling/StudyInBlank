@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <framework.ui.widget.CustomTitleView
+            app:custom_titleText="陈选文"
+            app:custom_titleTextColor="@color/red"
+            app:custom_titleTextSize="50sp"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+</RelativeLayout>
